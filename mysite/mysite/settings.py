@@ -45,6 +45,7 @@ if DEBUG:
         [ip[: ip.rfind(".")] + ".1" for ip in ips]
     )
 
+
 # Application definition
 
 INSTALLED_APPS = [
