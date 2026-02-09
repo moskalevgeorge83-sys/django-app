@@ -162,3 +162,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = reverse_lazy("myauth:about-me")
 LOGIN_URL = reverse_lazy("myauth:login")
 
+STATIC_URL = '/static/'
+STATIC_ROOT = '/app/staticfiles'
+
