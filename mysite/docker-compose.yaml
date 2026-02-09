@@ -2,14 +2,16 @@ services:
   app:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: "Dockerfile"
     ports:
-      - "8000:8000"
+      - "80:8000"
     restart: always
     env_file:
       - .env
     volumes:
       - ./mysite/database:/app/database
+    environment:
+      - DJANGO_DEBUG=1
     logging:
       driver: "json-file"
       options:
